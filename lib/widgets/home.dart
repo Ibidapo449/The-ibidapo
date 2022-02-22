@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_ibidapo/model/transaction.dart';
 import 'package:the_ibidapo/widgets/chart.dart';
+import 'package:the_ibidapo/widgets/main_drawer.dart';
 import 'package:the_ibidapo/widgets/new_transaction.dart';
 import 'package:the_ibidapo/widgets/transaction_list.dart';
 
@@ -67,6 +68,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             onPressed: () => _startNewTransaction(context),
           ),
         ],
+      ),
+
+      drawer: Drawer(
+        child: MainDrawer(),
       ),
       body: SingleChildScrollView(
         child: Column(
